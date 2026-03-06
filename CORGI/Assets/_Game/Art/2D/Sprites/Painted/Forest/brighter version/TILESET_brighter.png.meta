@@ -1,0 +1,1690 @@
+fileFormatVersion: 2
+guid: b4d8fd9171b14324db60e2b20b48ead3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3912104291809431288
+    second: TILESET_brighter_0
+  - first:
+      213: -9021003584772245901
+    second: TILESET_brighter_1
+  - first:
+      213: -6919719877703575549
+    second: TILESET_brighter_2
+  - first:
+      213: 299046455139395091
+    second: TILESET_brighter_3
+  - first:
+      213: -5014860060739678025
+    second: TILESET_brighter_4
+  - first:
+      213: -8096183460080837774
+    second: TILESET_brighter_5
+  - first:
+      213: -8431396603618477089
+    second: TILESET_brighter_6
+  - first:
+      213: -5838238726429991621
+    second: TILESET_brighter_7
+  - first:
+      213: 8918842794774988756
+    second: TILESET_brighter_8
+  - first:
+      213: -2989364726391323820
+    second: TILESET_brighter_9
+  - first:
+      213: 6446446771622378717
+    second: TILESET_brighter_10
+  - first:
+      213: 7399452069579621563
+    second: TILESET_brighter_11
+  - first:
+      213: 8247207114955446796
+    second: TILESET_brighter_12
+  - first:
+      213: 6482536859043533428
+    second: TILESET_brighter_13
+  - first:
+      213: 1845418889363499976
+    second: TILESET_brighter_14
+  - first:
+      213: -7170362034182805782
+    second: TILESET_brighter_15
+  - first:
+      213: -1752296280946434261
+    second: TILESET_brighter_16
+  - first:
+      213: 5155738445792299029
+    second: TILESET_brighter_17
+  - first:
+      213: 6795804051839258432
+    second: TILESET_brighter_18
+  - first:
+      213: -5608282178781664233
+    second: TILESET_brighter_19
+  - first:
+      213: 4861626086606993239
+    second: TILESET_brighter_20
+  - first:
+      213: -3565845625612989726
+    second: TILESET_brighter_21
+  - first:
+      213: -4639626405739170503
+    second: TILESET_brighter_22
+  - first:
+      213: -759836360460649868
+    second: TILESET_brighter_23
+  - first:
+      213: -4858680674326028212
+    second: TILESET_brighter_24
+  - first:
+      213: -8277243217954295145
+    second: TILESET_brighter_25
+  - first:
+      213: -8645792016681597295
+    second: TILESET_brighter_26
+  - first:
+      213: -7466113398486407819
+    second: TILESET_brighter_27
+  - first:
+      213: 6231292945459243188
+    second: TILESET_brighter_28
+  - first:
+      213: -497247961752244581
+    second: TILESET_brighter_29
+  - first:
+      213: 8399252369620283393
+    second: TILESET_brighter_30
+  - first:
+      213: 1188725963564462775
+    second: TILESET_brighter_31
+  - first:
+      213: -6413514457726696629
+    second: TILESET_brighter_32
+  - first:
+      213: -5663101037348171829
+    second: TILESET_brighter_33
+  - first:
+      213: 5204236424008567120
+    second: TILESET_brighter_34
+  - first:
+      213: 8560158375974531547
+    second: TILESET_brighter_35
+  - first:
+      213: 8719751187357698142
+    second: TILESET_brighter_36
+  - first:
+      213: -4802799828248799996
+    second: TILESET_brighter_37
+  - first:
+      213: -1801462841881765042
+    second: TILESET_brighter_38
+  - first:
+      213: -8939324726372089889
+    second: TILESET_brighter_39
+  - first:
+      213: -6338588410966099854
+    second: TILESET_brighter_40
+  - first:
+      213: 233142049521841029
+    second: TILESET_brighter_41
+  - first:
+      213: -8539574115734960083
+    second: TILESET_brighter_42
+  - first:
+      213: -8211796475274431467
+    second: TILESET_brighter_43
+  - first:
+      213: -3410181468234279208
+    second: TILESET_brighter_44
+  - first:
+      213: -6950847488935910614
+    second: TILESET_brighter_45
+  - first:
+      213: 2422225331211954251
+    second: TILESET_brighter_46
+  - first:
+      213: 269046083845816540
+    second: TILESET_brighter_47
+  - first:
+      213: 2258884675670782349
+    second: TILESET_brighter_48
+  - first:
+      213: 4847947798423826807
+    second: TILESET_brighter_49
+  - first:
+      213: 3745637741073319484
+    second: TILESET_brighter_50
+  - first:
+      213: -3877239817663206065
+    second: TILESET_brighter_51
+  - first:
+      213: 205218621143641664
+    second: TILESET_brighter_52
+  - first:
+      213: -8322029143658509348
+    second: TILESET_brighter_53
+  - first:
+      213: 6771868969421278752
+    second: TILESET_brighter_54
+  - first:
+      213: -1035092177072214389
+    second: TILESET_brighter_55
+  - first:
+      213: -7732471139745339900
+    second: TILESET_brighter_56
+  - first:
+      213: -8475535042046580206
+    second: TILESET_brighter_57
+  - first:
+      213: 1292935533423201091
+    second: TILESET_brighter_58
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TILESET_brighter_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 481
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe059d40269a4630800000000000000
+      internalID: 3912104291809431288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_1
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 434
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376ff14f805fec280800000000000000
+      internalID: -9021003584772245901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_2
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 399
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 308d448fe6738ff90800000000000000
+      internalID: -6919719877703575549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_3
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 447
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3166ce1aa2d662400800000000000000
+      internalID: 299046455139395091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_4
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 319
+        width: 146
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b051593853a76ab0800000000000000
+      internalID: -5014860060739678025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_5
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 438
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27b1d79d90494af80800000000000000
+      internalID: -8096183460080837774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_6
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 436
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdbb2e0e579adfa80800000000000000
+      internalID: -8431396603618477089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_7
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 434
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3d16358fc86afea0800000000000000
+      internalID: -5838238726429991621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_8
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 399
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d78d1e844816cb70800000000000000
+      internalID: 8918842794774988756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_9
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 436
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 453cc53ae94a386d0800000000000000
+      internalID: -2989364726391323820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_10
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 415
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddcf30e1f21667950800000000000000
+      internalID: 6446446771622378717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_11
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 390
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb482db047220b660800000000000000
+      internalID: 7399452069579621563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_12
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 383
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a5efbec27f37270800000000000000
+      internalID: 8247207114955446796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_13
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 383
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4729aa66de896f950800000000000000
+      internalID: 6482536859043533428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_14
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 384
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cbae42d3be3c9910800000000000000
+      internalID: 1845418889363499976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_15
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 383
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae6269958b1cd7c90800000000000000
+      internalID: -7170362034182805782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_16
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 337
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f13f801d79ea7e0800000000000000
+      internalID: -1752296280946434261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_17
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 369
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5184648dcccdc8740800000000000000
+      internalID: 5155738445792299029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_18
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 367
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f0a0987cb8f4e50800000000000000
+      internalID: 6795804051839258432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_19
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 367
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ca09582116b22b0800000000000000
+      internalID: -5608282178781664233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_20
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 367
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7577bf2fa27f77340800000000000000
+      internalID: 4861626086606993239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_21
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 335
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea0571db42938ec0800000000000000
+      internalID: -3565845625612989726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_22
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 335
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 935f463ad5cbc9fb0800000000000000
+      internalID: -4639626405739170503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_23
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 351
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47a315f1bd48475f0800000000000000
+      internalID: -759836360460649868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_24
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 303
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c40edb94baf729cb0800000000000000
+      internalID: -4858680674326028212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_25
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 335
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 792b252e523512d80800000000000000
+      internalID: -8277243217954295145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_26
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 224
+        width: 66
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19609cbd7f9f30880800000000000000
+      internalID: -8645792016681597295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_27
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 211
+        width: 79
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 575ee66db69036890800000000000000
+      internalID: -7466113398486407819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_28
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 239
+        width: 102
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b8ee794beff97650800000000000000
+      internalID: 6231292945459243188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_29
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 271
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e68720d9b6919f0800000000000000
+      internalID: -497247961752244581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_30
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 207
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 100331e6783209470800000000000000
+      internalID: 8399252369620283393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_31
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 162
+        width: 94
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b23b8937f33f7010800000000000000
+      internalID: 1188725963564462775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_32
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 223
+        width: 50
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b434e59b49e9ef6a0800000000000000
+      internalID: -6413514457726696629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_33
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 194
+        width: 28
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf47b56c9f9861b0800000000000000
+      internalID: -5663101037348171829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_34
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 112
+        width: 66
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0590e245479293840800000000000000
+      internalID: 5204236424008567120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_35
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 99
+        width: 79
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd1fb0570bacbc670800000000000000
+      internalID: 8560158375974531547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_36
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 80
+        width: 102
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e580f347187c20970800000000000000
+      internalID: 8719751187357698142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_37
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 159
+        width: 58
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4055ce5a007095db0800000000000000
+      internalID: -4802799828248799996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_38
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 140
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4b5291071beff6e0800000000000000
+      internalID: -1801462841881765042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_39
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 127
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdfb9b0268321f380800000000000000
+      internalID: -8939324726372089889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_40
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 31
+        width: 66
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27835fa6c6fc808a0800000000000000
+      internalID: -6338588410966099854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_41
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 95
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 583b4f375794c3300800000000000000
+      internalID: 233142049521841029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_42
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 82
+        width: 28
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d284f7a16965d7980800000000000000
+      internalID: -8539574115734960083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_43
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 95
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 514767b1d96d90e80800000000000000
+      internalID: -8211796475274431467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_44
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 95
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d69646c50a9ca0d0800000000000000
+      internalID: -3410181468234279208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_45
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 31
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a232f063901a98f90800000000000000
+      internalID: -6950847488935910614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_46
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 31
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4867d0fa197d9120800000000000000
+      internalID: 2422225331211954251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_47
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 2
+        width: 94
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd007dfdcf7dbb300800000000000000
+      internalID: 269046083845816540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_48
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 63
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d813ee9f4ab295f10800000000000000
+      internalID: 2258884675670782349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_49
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 71
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77170be46de574340800000000000000
+      internalID: 4847947798423826807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_50
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 35
+        width: 9
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c36c8f52ead2bf330800000000000000
+      internalID: 3745637741073319484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_51
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 35
+        width: 9
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d2f27ade6413ac0800000000000000
+      internalID: -3877239817663206065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_52
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 35
+        width: 9
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04eef86af3519d200800000000000000
+      internalID: 205218621143641664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_53
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 47
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdb49c9f596328c80800000000000000
+      internalID: -8322029143658509348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_54
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 49
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02e88d3e2f28afd50800000000000000
+      internalID: 6771868969421278752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_55
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 0
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8e23db262d92a1f0800000000000000
+      internalID: -1035092177072214389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_56
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 0
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406e48f777eb0b490800000000000000
+      internalID: -7732471139745339900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_57
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 0
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21a2079d8c9d06a80800000000000000
+      internalID: -8475535042046580206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILESET_brighter_58
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 0
+        width: 66
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b8b23740e61f110800000000000000
+      internalID: 1292935533423201091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TILESET_brighter_0: 3912104291809431288
+      TILESET_brighter_1: -9021003584772245901
+      TILESET_brighter_10: 6446446771622378717
+      TILESET_brighter_11: 7399452069579621563
+      TILESET_brighter_12: 8247207114955446796
+      TILESET_brighter_13: 6482536859043533428
+      TILESET_brighter_14: 1845418889363499976
+      TILESET_brighter_15: -7170362034182805782
+      TILESET_brighter_16: -1752296280946434261
+      TILESET_brighter_17: 5155738445792299029
+      TILESET_brighter_18: 6795804051839258432
+      TILESET_brighter_19: -5608282178781664233
+      TILESET_brighter_2: -6919719877703575549
+      TILESET_brighter_20: 4861626086606993239
+      TILESET_brighter_21: -3565845625612989726
+      TILESET_brighter_22: -4639626405739170503
+      TILESET_brighter_23: -759836360460649868
+      TILESET_brighter_24: -4858680674326028212
+      TILESET_brighter_25: -8277243217954295145
+      TILESET_brighter_26: -8645792016681597295
+      TILESET_brighter_27: -7466113398486407819
+      TILESET_brighter_28: 6231292945459243188
+      TILESET_brighter_29: -497247961752244581
+      TILESET_brighter_3: 299046455139395091
+      TILESET_brighter_30: 8399252369620283393
+      TILESET_brighter_31: 1188725963564462775
+      TILESET_brighter_32: -6413514457726696629
+      TILESET_brighter_33: -5663101037348171829
+      TILESET_brighter_34: 5204236424008567120
+      TILESET_brighter_35: 8560158375974531547
+      TILESET_brighter_36: 8719751187357698142
+      TILESET_brighter_37: -4802799828248799996
+      TILESET_brighter_38: -1801462841881765042
+      TILESET_brighter_39: -8939324726372089889
+      TILESET_brighter_4: -5014860060739678025
+      TILESET_brighter_40: -6338588410966099854
+      TILESET_brighter_41: 233142049521841029
+      TILESET_brighter_42: -8539574115734960083
+      TILESET_brighter_43: -8211796475274431467
+      TILESET_brighter_44: -3410181468234279208
+      TILESET_brighter_45: -6950847488935910614
+      TILESET_brighter_46: 2422225331211954251
+      TILESET_brighter_47: 269046083845816540
+      TILESET_brighter_48: 2258884675670782349
+      TILESET_brighter_49: 4847947798423826807
+      TILESET_brighter_5: -8096183460080837774
+      TILESET_brighter_50: 3745637741073319484
+      TILESET_brighter_51: -3877239817663206065
+      TILESET_brighter_52: 205218621143641664
+      TILESET_brighter_53: -8322029143658509348
+      TILESET_brighter_54: 6771868969421278752
+      TILESET_brighter_55: -1035092177072214389
+      TILESET_brighter_56: -7732471139745339900
+      TILESET_brighter_57: -8475535042046580206
+      TILESET_brighter_58: 1292935533423201091
+      TILESET_brighter_6: -8431396603618477089
+      TILESET_brighter_7: -5838238726429991621
+      TILESET_brighter_8: 8918842794774988756
+      TILESET_brighter_9: -2989364726391323820
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

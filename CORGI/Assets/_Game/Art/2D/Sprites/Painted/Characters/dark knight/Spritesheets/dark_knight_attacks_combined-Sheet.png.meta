@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: b0d2e414b1df37d439d978c7d428135b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3055192280208709873
+    second: dark_knight_attacks_combined-Sheet_0
+  - first:
+      213: 2142757172310021555
+    second: dark_knight_attacks_combined-Sheet_1
+  - first:
+      213: -353294990262385880
+    second: dark_knight_attacks_combined-Sheet_2
+  - first:
+      213: -6941494809953538049
+    second: dark_knight_attacks_combined-Sheet_3
+  - first:
+      213: 177207173131689317
+    second: dark_knight_attacks_combined-Sheet_4
+  - first:
+      213: -8383911865806399141
+    second: dark_knight_attacks_combined-Sheet_5
+  - first:
+      213: 6974747268837569665
+    second: dark_knight_attacks_combined-Sheet_6
+  - first:
+      213: -7738685882445767042
+    second: dark_knight_attacks_combined-Sheet_7
+  - first:
+      213: -5021151348074354564
+    second: dark_knight_attacks_combined-Sheet_8
+  - first:
+      213: -3694987022139300074
+    second: dark_knight_attacks_combined-Sheet_9
+  - first:
+      213: 3356333557359964941
+    second: dark_knight_attacks_combined-Sheet_10
+  - first:
+      213: -5301465927004489547
+    second: dark_knight_attacks_combined-Sheet_11
+  - first:
+      213: -4822175590535605741
+    second: dark_knight_attacks_combined-Sheet_12
+  - first:
+      213: -8254552492814582683
+    second: dark_knight_attacks_combined-Sheet_13
+  - first:
+      213: -3153756866073357238
+    second: dark_knight_attacks_combined-Sheet_14
+  - first:
+      213: 1619716864945757516
+    second: dark_knight_attacks_combined-Sheet_15
+  - first:
+      213: 500690236079348210
+    second: dark_knight_attacks_combined-Sheet_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dark_knight_attacks_combined-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 0
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f07e4a9eec6c995d0800000000000000
+      internalID: -3055192280208709873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_attacks_combined-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 0
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b5957f9b4a9cbd10800000000000000
+      internalID: 2142757172310021555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_attacks_combined-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 0
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8234c740418d81bf0800000000000000
+      internalID: -353294990262385880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_attacks_combined-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 0
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff608a7f3bdaaf90800000000000000
+      internalID: -6941494809953538049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_attacks_combined-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 0
+        width: 43
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d5a2e2cf0957200800000000000000
+      internalID: 177207173131689317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_attacks_combined-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 0
+        width: 43
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b595d62f39c56ab80800000000000000
+      internalID: -8383911865806399141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_attacks_combined-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 184703defa74bc060800000000000000
+      internalID: 6974747268837569665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_attacks_combined-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7e5d74f03aaa9490800000000000000
+      internalID: -7738685882445767042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_attacks_combined-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 0
+        width: 52
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c78ed8eb379415ab0800000000000000
+      internalID: -5021151348074354564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_attacks_combined-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 0
+        width: 35
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61765b751e4c8bcc0800000000000000
+      internalID: -3694987022139300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_attacks_combined-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 0
+        width: 37
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d03f92a7697149e20800000000000000
+      internalID: 3356333557359964941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_attacks_combined-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 2
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b87f08e3d86d66b0800000000000000
+      internalID: -5301465927004489547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_attacks_combined-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 0
+        width: 37
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 312d09179d0341db0800000000000000
+      internalID: -4822175590535605741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_attacks_combined-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 9
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56cb8f50e30f17d80800000000000000
+      internalID: -8254552492814582683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_attacks_combined-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 15
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a449fb1f6da9b34d0800000000000000
+      internalID: -3153756866073357238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_attacks_combined-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 13
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d1dc338e36a7610800000000000000
+      internalID: 1619716864945757516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_knight_attacks_combined-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 0
+        width: 37
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f91400fd1fc2f600800000000000000
+      internalID: 500690236079348210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      dark_knight_attacks_combined-Sheet_0: -3055192280208709873
+      dark_knight_attacks_combined-Sheet_1: 2142757172310021555
+      dark_knight_attacks_combined-Sheet_10: 3356333557359964941
+      dark_knight_attacks_combined-Sheet_11: -5301465927004489547
+      dark_knight_attacks_combined-Sheet_12: -4822175590535605741
+      dark_knight_attacks_combined-Sheet_13: -8254552492814582683
+      dark_knight_attacks_combined-Sheet_14: -3153756866073357238
+      dark_knight_attacks_combined-Sheet_15: 1619716864945757516
+      dark_knight_attacks_combined-Sheet_16: 500690236079348210
+      dark_knight_attacks_combined-Sheet_2: -353294990262385880
+      dark_knight_attacks_combined-Sheet_3: -6941494809953538049
+      dark_knight_attacks_combined-Sheet_4: 177207173131689317
+      dark_knight_attacks_combined-Sheet_5: -8383911865806399141
+      dark_knight_attacks_combined-Sheet_6: 6974747268837569665
+      dark_knight_attacks_combined-Sheet_7: -7738685882445767042
+      dark_knight_attacks_combined-Sheet_8: -5021151348074354564
+      dark_knight_attacks_combined-Sheet_9: -3694987022139300074
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

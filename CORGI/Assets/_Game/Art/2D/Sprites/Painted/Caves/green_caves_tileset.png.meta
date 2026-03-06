@@ -1,0 +1,1378 @@
+fileFormatVersion: 2
+guid: 1510190c7697e5d4399bfd1ad38c96f8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4822489761561392243
+    second: green_caves_tileset_0
+  - first:
+      213: -4000654110701563886
+    second: green_caves_tileset_1
+  - first:
+      213: -2974689933105539775
+    second: green_caves_tileset_2
+  - first:
+      213: 6812574888212335490
+    second: green_caves_tileset_3
+  - first:
+      213: 3896980756035200705
+    second: green_caves_tileset_4
+  - first:
+      213: -7291839535904128459
+    second: green_caves_tileset_5
+  - first:
+      213: -5588728372371617668
+    second: green_caves_tileset_6
+  - first:
+      213: -670024746925126653
+    second: green_caves_tileset_7
+  - first:
+      213: 422492700018821498
+    second: green_caves_tileset_8
+  - first:
+      213: 40835270586518809
+    second: green_caves_tileset_9
+  - first:
+      213: -2300138684567680439
+    second: green_caves_tileset_10
+  - first:
+      213: -9200662108916146043
+    second: green_caves_tileset_11
+  - first:
+      213: -8426186581682798850
+    second: green_caves_tileset_12
+  - first:
+      213: 7089440403626579465
+    second: green_caves_tileset_13
+  - first:
+      213: -8780857899069873236
+    second: green_caves_tileset_14
+  - first:
+      213: -3900925703867486146
+    second: green_caves_tileset_15
+  - first:
+      213: 1287289397149939358
+    second: green_caves_tileset_16
+  - first:
+      213: 4691648289238983004
+    second: green_caves_tileset_17
+  - first:
+      213: 8581456075604692525
+    second: green_caves_tileset_18
+  - first:
+      213: -4353680079551511914
+    second: green_caves_tileset_19
+  - first:
+      213: 7712488636806348951
+    second: green_caves_tileset_20
+  - first:
+      213: -1498503618380581109
+    second: green_caves_tileset_21
+  - first:
+      213: -3555028040374181046
+    second: green_caves_tileset_22
+  - first:
+      213: 8091069613683847351
+    second: green_caves_tileset_23
+  - first:
+      213: -511595313725019732
+    second: green_caves_tileset_24
+  - first:
+      213: 7079005214964948002
+    second: green_caves_tileset_25
+  - first:
+      213: 685175175999776005
+    second: green_caves_tileset_26
+  - first:
+      213: -2210064559823092093
+    second: green_caves_tileset_27
+  - first:
+      213: -6411600527330067344
+    second: green_caves_tileset_28
+  - first:
+      213: 7133522223597335522
+    second: green_caves_tileset_29
+  - first:
+      213: 1157409030833290763
+    second: green_caves_tileset_30
+  - first:
+      213: 5923924384196151810
+    second: green_caves_tileset_31
+  - first:
+      213: 8894274327822883868
+    second: green_caves_tileset_32
+  - first:
+      213: -852273835404012949
+    second: green_caves_tileset_33
+  - first:
+      213: -4951821658473161495
+    second: green_caves_tileset_34
+  - first:
+      213: 7408233572546809153
+    second: green_caves_tileset_35
+  - first:
+      213: 5981283276170674205
+    second: green_caves_tileset_36
+  - first:
+      213: 2380521952358849320
+    second: green_caves_tileset_37
+  - first:
+      213: 1835170364313196773
+    second: green_caves_tileset_38
+  - first:
+      213: -2938507995009495322
+    second: green_caves_tileset_39
+  - first:
+      213: 5507744552289430454
+    second: green_caves_tileset_40
+  - first:
+      213: 3077031642595661231
+    second: green_caves_tileset_41
+  - first:
+      213: -1165779279035375733
+    second: green_caves_tileset_42
+  - first:
+      213: -2925903351838543676
+    second: green_caves_tileset_43
+  - first:
+      213: 9017676867718961282
+    second: green_caves_tileset_44
+  - first:
+      213: -6694718830747229048
+    second: green_caves_tileset_45
+  - first:
+      213: 2590808760733620450
+    second: green_caves_tileset_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: green_caves_tileset_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 305
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8bcc2dcc13131db0800000000000000
+      internalID: -4822489761561392243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 271
+        width: 81
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2105d6e5842da78c0800000000000000
+      internalID: -4000654110701563886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 239
+        width: 114
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14550543447c7b6d0800000000000000
+      internalID: -2974689933105539775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 370
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28b84a924c02b8e50800000000000000
+      internalID: 6812574888212335490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_4
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 223
+        width: 50
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c6e20cb95bd41630800000000000000
+      internalID: 3896980756035200705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_5
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 223
+        width: 45
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 532094f639e2eca90800000000000000
+      internalID: -7291839535904128459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_6
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 276
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7884aad729d072b0800000000000000
+      internalID: -5588728372371617668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_7
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 224
+        width: 17
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30c8ec8ea0893b6f0800000000000000
+      internalID: -670024746925126653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_8
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 230
+        width: 61
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7941d84fdefcd500800000000000000
+      internalID: 422492700018821498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_9
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 191
+        width: 50
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91dcd955673119000800000000000000
+      internalID: 40835270586518809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_10
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 191
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94a85349d044410e0800000000000000
+      internalID: -2300138684567680439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 197
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58028a32f8ea05080800000000000000
+      internalID: -9200662108916146043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_12
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 197
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efe32a3a2fb201b80800000000000000
+      internalID: -8426186581682798850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_13
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 192
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 906d6725c70c26260800000000000000
+      internalID: 7089440403626579465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_14
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 192
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca3e1c68340242680800000000000000
+      internalID: -8780857899069873236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_15
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 191
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e30b9c58db02dd9c0800000000000000
+      internalID: -3900925703867486146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_16
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 159
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e96bf38e2ee5dd110800000000000000
+      internalID: 1287289397149939358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_17
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 166
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c51a82bf2451c1140800000000000000
+      internalID: 4691648289238983004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_18
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 159
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e090295d4771770800000000000000
+      internalID: 8581456075604692525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_19
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 159
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69243a0d80f9493c0800000000000000
+      internalID: -4353680079551511914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_20
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 179
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790441b7d83480b60800000000000000
+      internalID: 7712488636806348951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_21
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 178
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07b9c306ee343be0800000000000000
+      internalID: -1498503618380581109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_22
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 184
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a43a1f625d00aaec0800000000000000
+      internalID: -3555028040374181046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_23
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 175
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0359002f0494070800000000000000
+      internalID: 8091069613683847351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_24
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 182
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca96aa0d5c276e8f0800000000000000
+      internalID: -511595313725019732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_25
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 184
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c9f11acbdad3260800000000000000
+      internalID: 7079005214964948002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_26
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 181
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 505e16e313b328900800000000000000
+      internalID: 685175175999776005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_27
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 170
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38680150ef54451e0800000000000000
+      internalID: -2210064559823092093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_28
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 171
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07cb8ce5a4b6507a0800000000000000
+      internalID: -6411600527330067344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_29
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 166
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e3bfd6daac5ff260800000000000000
+      internalID: 7133522223597335522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_30
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 175
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0eb5ae9161ff0010800000000000000
+      internalID: 1157409030833290763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_31
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 177
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20a494457d1063250800000000000000
+      internalID: 5923924384196151810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_32
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 164
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1c52c4906fce6b70800000000000000
+      internalID: 8894274327822883868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_33
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 168
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b625265567d1c24f0800000000000000
+      internalID: -852273835404012949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_34
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 165
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ec1f9fff68974bb0800000000000000
+      internalID: -4951821658473161495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_35
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 119
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14d86c80f255fc660800000000000000
+      internalID: 7408233572546809153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_36
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 119
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1043211379c10350800000000000000
+      internalID: 5981283276170674205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_37
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 119
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82b5e566a10590120800000000000000
+      internalID: 2380521952358849320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_38
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 119
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e8563329b5d77910800000000000000
+      internalID: 1835170364313196773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_39
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 119
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee40d32c825837d0800000000000000
+      internalID: -2938507995009495322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_40
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 80
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bbedc03d707f6c40800000000000000
+      internalID: 5507744552289430454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_41
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 80
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa51d83e9ffc3ba20800000000000000
+      internalID: 3077031642595661231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_42
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 80
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8fd59a1ce152dfe0800000000000000
+      internalID: -1165779279035375733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_43
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 80
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c0f982576a1567d0800000000000000
+      internalID: -2925903351838543676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_44
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 80
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28855af5559352d70800000000000000
+      internalID: 9017676867718961282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_45
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 0
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 884613e81b49713a0800000000000000
+      internalID: -6694718830747229048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_caves_tileset_46
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 0
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e85f7857d664f320800000000000000
+      internalID: 2590808760733620450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      green_caves_tileset_0: -4822489761561392243
+      green_caves_tileset_1: -4000654110701563886
+      green_caves_tileset_10: -2300138684567680439
+      green_caves_tileset_11: -9200662108916146043
+      green_caves_tileset_12: -8426186581682798850
+      green_caves_tileset_13: 7089440403626579465
+      green_caves_tileset_14: -8780857899069873236
+      green_caves_tileset_15: -3900925703867486146
+      green_caves_tileset_16: 1287289397149939358
+      green_caves_tileset_17: 4691648289238983004
+      green_caves_tileset_18: 8581456075604692525
+      green_caves_tileset_19: -4353680079551511914
+      green_caves_tileset_2: -2974689933105539775
+      green_caves_tileset_20: 7712488636806348951
+      green_caves_tileset_21: -1498503618380581109
+      green_caves_tileset_22: -3555028040374181046
+      green_caves_tileset_23: 8091069613683847351
+      green_caves_tileset_24: -511595313725019732
+      green_caves_tileset_25: 7079005214964948002
+      green_caves_tileset_26: 685175175999776005
+      green_caves_tileset_27: -2210064559823092093
+      green_caves_tileset_28: -6411600527330067344
+      green_caves_tileset_29: 7133522223597335522
+      green_caves_tileset_3: 6812574888212335490
+      green_caves_tileset_30: 1157409030833290763
+      green_caves_tileset_31: 5923924384196151810
+      green_caves_tileset_32: 8894274327822883868
+      green_caves_tileset_33: -852273835404012949
+      green_caves_tileset_34: -4951821658473161495
+      green_caves_tileset_35: 7408233572546809153
+      green_caves_tileset_36: 5981283276170674205
+      green_caves_tileset_37: 2380521952358849320
+      green_caves_tileset_38: 1835170364313196773
+      green_caves_tileset_39: -2938507995009495322
+      green_caves_tileset_4: 3896980756035200705
+      green_caves_tileset_40: 5507744552289430454
+      green_caves_tileset_41: 3077031642595661231
+      green_caves_tileset_42: -1165779279035375733
+      green_caves_tileset_43: -2925903351838543676
+      green_caves_tileset_44: 9017676867718961282
+      green_caves_tileset_45: -6694718830747229048
+      green_caves_tileset_46: 2590808760733620450
+      green_caves_tileset_5: -7291839535904128459
+      green_caves_tileset_6: -5588728372371617668
+      green_caves_tileset_7: -670024746925126653
+      green_caves_tileset_8: 422492700018821498
+      green_caves_tileset_9: 40835270586518809
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

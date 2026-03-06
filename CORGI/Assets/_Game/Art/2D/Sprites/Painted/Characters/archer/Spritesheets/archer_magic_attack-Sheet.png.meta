@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: e34db9aa87a393a45998d30f2253ffb5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4500147743029244478
+    second: archer_magic_attack-Sheet_0
+  - first:
+      213: 2913641472530142763
+    second: archer_magic_attack-Sheet_1
+  - first:
+      213: 3750429766143778592
+    second: archer_magic_attack-Sheet_2
+  - first:
+      213: -6993182009317955083
+    second: archer_magic_attack-Sheet_3
+  - first:
+      213: 5278494076482860765
+    second: archer_magic_attack-Sheet_4
+  - first:
+      213: 2207454507292952623
+    second: archer_magic_attack-Sheet_5
+  - first:
+      213: -3968830826501548016
+    second: archer_magic_attack-Sheet_6
+  - first:
+      213: -2246888172800715794
+    second: archer_magic_attack-Sheet_7
+  - first:
+      213: -2707105065847232986
+    second: archer_magic_attack-Sheet_8
+  - first:
+      213: 7515827611920059235
+    second: archer_magic_attack-Sheet_9
+  - first:
+      213: -5122205358361791053
+    second: archer_magic_attack-Sheet_10
+  - first:
+      213: -3637246115565364745
+    second: archer_magic_attack-Sheet_11
+  - first:
+      213: 4113429178803452098
+    second: archer_magic_attack-Sheet_12
+  - first:
+      213: -5723324182453638090
+    second: archer_magic_attack-Sheet_13
+  - first:
+      213: -2968694964141569904
+    second: archer_magic_attack-Sheet_14
+  - first:
+      213: 2647347150983187437
+    second: archer_magic_attack-Sheet_15
+  - first:
+      213: 8781449675973670236
+    second: archer_magic_attack-Sheet_16
+  - first:
+      213: 1796915574317029673
+    second: archer_magic_attack-Sheet_17
+  - first:
+      213: -9128936326777892934
+    second: archer_magic_attack-Sheet_18
+  - first:
+      213: -3429964442518459101
+    second: archer_magic_attack-Sheet_19
+  - first:
+      213: -3741457245020825405
+    second: archer_magic_attack-Sheet_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: archer_magic_attack-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32b80c878cb37e30800000000000000
+      internalID: 4500147743029244478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_magic_attack-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 0
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b26510d6b755f6820800000000000000
+      internalID: 2913641472530142763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_magic_attack-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 5
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02f1d0e60043c0430800000000000000
+      internalID: 3750429766143778592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_magic_attack-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 0
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f963f4930a33fe90800000000000000
+      internalID: -6993182009317955083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_magic_attack-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 2
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6b3c9556af04940800000000000000
+      internalID: 5278494076482860765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_magic_attack-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 0
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f280805cd2472ae10800000000000000
+      internalID: 2207454507292952623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_magic_attack-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 1
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01851cc1461ebe8c0800000000000000
+      internalID: -3968830826501548016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_magic_attack-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 0
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee3df228c1371d0e0800000000000000
+      internalID: -2246888172800715794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_magic_attack-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 0
+        width: 62
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 626e384194e6e6ad0800000000000000
+      internalID: -2707105065847232986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_magic_attack-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 2
+        width: 49
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b419974659d4860800000000000000
+      internalID: 7515827611920059235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_magic_attack-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 15
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b53e3c7d554ae8b0800000000000000
+      internalID: -5122205358361791053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_magic_attack-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 0
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f99e09cde7e58dc0800000000000000
+      internalID: -3637246115565364745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_magic_attack-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 1
+        width: 50
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c87e435b06d51930800000000000000
+      internalID: 4113429178803452098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_magic_attack-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 0
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63ca272cafaa290b0800000000000000
+      internalID: -5723324182453638090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_magic_attack-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 098c9dfa8a31dc6d0800000000000000
+      internalID: -2968694964141569904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_magic_attack-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 0
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: debce7325344db420800000000000000
+      internalID: 2647347150983187437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_magic_attack-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 0
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c55316544f9fdd970800000000000000
+      internalID: 8781449675973670236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_magic_attack-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 7
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9299882c13defe810800000000000000
+      internalID: 1796915574317029673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_magic_attack-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 6
+        width: 40
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf8e3927c08f4180800000000000000
+      internalID: -9128936326777892934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_magic_attack-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 6
+        width: 29
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32d677323815660d0800000000000000
+      internalID: -3429964442518459101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_magic_attack-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 6
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c8d830757ca31cc0800000000000000
+      internalID: -3741457245020825405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      archer_magic_attack-Sheet_0: 4500147743029244478
+      archer_magic_attack-Sheet_1: 2913641472530142763
+      archer_magic_attack-Sheet_10: -5122205358361791053
+      archer_magic_attack-Sheet_11: -3637246115565364745
+      archer_magic_attack-Sheet_12: 4113429178803452098
+      archer_magic_attack-Sheet_13: -5723324182453638090
+      archer_magic_attack-Sheet_14: -2968694964141569904
+      archer_magic_attack-Sheet_15: 2647347150983187437
+      archer_magic_attack-Sheet_16: 8781449675973670236
+      archer_magic_attack-Sheet_17: 1796915574317029673
+      archer_magic_attack-Sheet_18: -9128936326777892934
+      archer_magic_attack-Sheet_19: -3429964442518459101
+      archer_magic_attack-Sheet_2: 3750429766143778592
+      archer_magic_attack-Sheet_20: -3741457245020825405
+      archer_magic_attack-Sheet_3: -6993182009317955083
+      archer_magic_attack-Sheet_4: 5278494076482860765
+      archer_magic_attack-Sheet_5: 2207454507292952623
+      archer_magic_attack-Sheet_6: -3968830826501548016
+      archer_magic_attack-Sheet_7: -2246888172800715794
+      archer_magic_attack-Sheet_8: -2707105065847232986
+      archer_magic_attack-Sheet_9: 7515827611920059235
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

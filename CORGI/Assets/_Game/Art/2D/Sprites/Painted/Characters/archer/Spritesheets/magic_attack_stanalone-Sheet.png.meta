@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 1540d71e5ec1b074296bc37bb202d440
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -659616886630687518
+    second: magic_attack_stanalone-Sheet_0
+  - first:
+      213: -4503654041615179933
+    second: magic_attack_stanalone-Sheet_1
+  - first:
+      213: -1941792406563181498
+    second: magic_attack_stanalone-Sheet_2
+  - first:
+      213: 4420038977036687934
+    second: magic_attack_stanalone-Sheet_3
+  - first:
+      213: -2180426487340362042
+    second: magic_attack_stanalone-Sheet_4
+  - first:
+      213: -1966023326554416266
+    second: magic_attack_stanalone-Sheet_5
+  - first:
+      213: 2793485010418997870
+    second: magic_attack_stanalone-Sheet_6
+  - first:
+      213: -4910914594400143752
+    second: magic_attack_stanalone-Sheet_7
+  - first:
+      213: -6089482350611603484
+    second: magic_attack_stanalone-Sheet_8
+  - first:
+      213: -8020467126749671079
+    second: magic_attack_stanalone-Sheet_9
+  - first:
+      213: 1279520417743931913
+    second: magic_attack_stanalone-Sheet_10
+  - first:
+      213: 4765210426966006383
+    second: magic_attack_stanalone-Sheet_11
+  - first:
+      213: 4552454094245342891
+    second: magic_attack_stanalone-Sheet_12
+  - first:
+      213: 7462651043765511108
+    second: magic_attack_stanalone-Sheet_13
+  - first:
+      213: -4217787737618922819
+    second: magic_attack_stanalone-Sheet_14
+  - first:
+      213: -251225427856475915
+    second: magic_attack_stanalone-Sheet_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: magic_attack_stanalone-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 5
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ec5788bfe198d6f0800000000000000
+      internalID: -659616886630687518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_attack_stanalone-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 2
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36f5642b28ecf71c0800000000000000
+      internalID: -4503654041615179933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_attack_stanalone-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 1
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c2043281e5d05e0800000000000000
+      internalID: -1941792406563181498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_attack_stanalone-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 0
+        width: 51
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a17aff702275d30800000000000000
+      internalID: 4420038977036687934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_attack_stanalone-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 13
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c6993389a19db1e0800000000000000
+      internalID: -2180426487340362042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_attack_stanalone-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 13
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67b9790733847b4e0800000000000000
+      internalID: -1966023326554416266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_attack_stanalone-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 2
+        width: 55
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a176301d374c620800000000000000
+      internalID: 2793485010418997870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_attack_stanalone-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 15
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8767f7e023de8dbb0800000000000000
+      internalID: -4910914594400143752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_attack_stanalone-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 1
+        width: 62
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4efd8c9c010dd7ba0800000000000000
+      internalID: -6089482350611603484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_attack_stanalone-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 7
+        width: 99
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 951536974a391b090800000000000000
+      internalID: -8020467126749671079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_attack_stanalone-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 7
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90a8c7e6a05c1c110800000000000000
+      internalID: 1279520417743931913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_attack_stanalone-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 6
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6adb4bd2ad612240800000000000000
+      internalID: 4765210426966006383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_attack_stanalone-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 6
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae24c7f0e09d2f30800000000000000
+      internalID: 4552454094245342891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_attack_stanalone-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 5
+        width: 53
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c36752e599a09760800000000000000
+      internalID: 7462651043765511108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_attack_stanalone-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 6
+        width: 29
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db2c93146686775c0800000000000000
+      internalID: -4217787737618922819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_attack_stanalone-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 6
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8b11eedc7738cf0800000000000000
+      internalID: -251225427856475915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      magic_attack_stanalone-Sheet_0: -659616886630687518
+      magic_attack_stanalone-Sheet_1: -4503654041615179933
+      magic_attack_stanalone-Sheet_10: 1279520417743931913
+      magic_attack_stanalone-Sheet_11: 4765210426966006383
+      magic_attack_stanalone-Sheet_12: 4552454094245342891
+      magic_attack_stanalone-Sheet_13: 7462651043765511108
+      magic_attack_stanalone-Sheet_14: -4217787737618922819
+      magic_attack_stanalone-Sheet_15: -251225427856475915
+      magic_attack_stanalone-Sheet_2: -1941792406563181498
+      magic_attack_stanalone-Sheet_3: 4420038977036687934
+      magic_attack_stanalone-Sheet_4: -2180426487340362042
+      magic_attack_stanalone-Sheet_5: -1966023326554416266
+      magic_attack_stanalone-Sheet_6: 2793485010418997870
+      magic_attack_stanalone-Sheet_7: -4910914594400143752
+      magic_attack_stanalone-Sheet_8: -6089482350611603484
+      magic_attack_stanalone-Sheet_9: -8020467126749671079
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
