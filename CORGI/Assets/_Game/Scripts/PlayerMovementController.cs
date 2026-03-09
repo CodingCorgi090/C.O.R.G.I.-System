@@ -16,6 +16,12 @@ public class PlayerMovementController : MonoBehaviour, PlayerInputActions.IPlaye
 
     public event Action InteractRequested;
 
+    /// <summary>
+    /// Raised when the player performs an attack. Subscribe to this event
+    /// to record attacks in any observer system.
+    /// </summary>
+    public event Action<AttackType> AttackPerformed;
+
     private void Awake()
     {
         _playerInputActions = new PlayerInputActions();
@@ -87,6 +93,12 @@ public class PlayerMovementController : MonoBehaviour, PlayerInputActions.IPlaye
 
     public void OnAttack(InputAction.CallbackContext context)
     {
+        if (!context.performed)
+        {
+            return;
+        }
+
+        AttackPerformed?.Invoke(AttackType.Primary);
     }
 
     public void OnCrouch(InputAction.CallbackContext context)
