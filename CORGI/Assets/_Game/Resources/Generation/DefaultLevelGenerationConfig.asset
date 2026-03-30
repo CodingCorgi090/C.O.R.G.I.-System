@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 246a91a837e14c0bb1f0f9290ca3278d, type: 3}
+  m_Name: DefaultLevelGenerationConfig
+  m_EditorClassIdentifier: 
+  autoGenerateOnStart: 1
+  regenerateOnGoalReached: 1
+  randomizeSeed: 1
+  fixedSeed: 12345
+  baseDifficulty: 1
+  baseEnvironmentObjectCount: 8
+  baseEnemyCount: 2
+  environmentObjectsPerDifficulty: 2
+  enemiesPerDifficulty: 1
+  maxExtraEnvironmentObjects: 18
+  maxExtraEnemies: 10
+  spawnAttemptsPerEntity: 40
+  boundaryInset: 0.75
+  minimumPlayerEnemyDistance: 4
+  minimumPlayerGoalDistance: 8
+  minimumEnvironmentSpacing: 1.25
+  minimumEnemySpacing: 1.2
+  minimumGoalSpacing: 1.75
+  difficultyGainPerGeneratedLevel: 0.15
+  difficultyGainPerCompletedLevel: 0.35
+  completionBaselineSeconds: 45
+  fastCompletionDifficultyBonus: 0.9
+  dominantAttackDifficultyBonus: 0.45
+  orbitDifficultyBonus: 0.25

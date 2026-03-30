@@ -11,8 +11,19 @@ namespace _Game.Scripts.Combat
         public readonly Vector2 Point;
         public readonly string AttackSignature;
         public readonly bool IsCounterAttack;
+        public readonly float KnockbackForce;
+        public readonly float StunDuration;
 
-        public DamageInfo(GameObject source, int attackId, float amount, Vector2 direction, Vector2 point, string attackSignature, bool isCounterAttack)
+        public DamageInfo(
+            GameObject source,
+            int attackId,
+            float amount,
+            Vector2 direction,
+            Vector2 point,
+            string attackSignature,
+            bool isCounterAttack,
+            float knockbackForce = 0f,
+            float stunDuration = 0f)
         {
             Source = source;
             AttackId = attackId;
@@ -21,6 +32,8 @@ namespace _Game.Scripts.Combat
             Point = point;
             AttackSignature = attackSignature;
             IsCounterAttack = isCounterAttack;
+            KnockbackForce = knockbackForce;
+            StunDuration = stunDuration;
         }
     }
 }

@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617c6c9e999b4566a75b70ce8604ea18, type: 3}
+  m_Name: DefaultSpawnCatalog
+  m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 8883471567343896208, guid: b2190fb2d8f5b884c9f8d933de940dc4, type: 3}
+  endGoalPrefab: {fileID: 0}
+  environmentPrefabs:
+  - prefab: {fileID: 0}
+    weight: 0
+    minimumScale: 0
+    maximumScale: 0
+    addColliderIfMissing: 0
+  enemyPrefabs:
+  - prefab: {fileID: 100100000, guid: f8f86dae7245507439f7069399451c46, type: 3}
+    weight: 1
+    minimumScale: 1
+    maximumScale: 1.2
+    addColliderIfMissing: 1
+  boundaryLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  placementBlockingLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  playerLayer: 0
+  enemyLayer: 0
+  environmentLayer: 0
+  goalLayer: 0

@@ -7,6 +7,9 @@ namespace _Game.Scripts
 {
     [RequireComponent(typeof(Health2D))]
     [RequireComponent(typeof(Hurtbox2D))]
+    [RequireComponent(typeof(HitReaction2D))]
+    [RequireComponent(typeof(Shield2D))]
+    [RequireComponent(typeof(EnemyRespawnController))]
     public class EnemyController : MonoBehaviour
     {
         private enum EnemyTactic
@@ -28,6 +31,9 @@ namespace _Game.Scripts
 
         [Header("References")]
         [SerializeField] private Rigidbody2D rb;
+        [SerializeField] private Collider2D movementCollider;
+        [SerializeField] private HitReaction2D hitReaction;
+        [SerializeField] private Shield2D shield;
         [SerializeField] private PlayerMovementController targetPlayer;
 
         [Header("Movement")]
@@ -38,6 +44,33 @@ namespace _Game.Scripts
         [SerializeField, Min(0f)] private float predictionTime = 0.4f;
         [SerializeField, Min(0f)] private float dodgeDistance = 2.25f;
         [SerializeField, Min(0f)] private float reacquireDistance = 14f;
+
+        [Header("Obstacle Avoidance")]
+        [SerializeField] private LayerMask obstacleLayers = ~0;
+        [SerializeField, Min(0.05f)] private float obstacleProbeDistance = 0.8f;
+        [SerializeField, Min(0f)] private float obstacleClearance = 0.1f;
+        [SerializeField, Range(10f, 85f)] private float avoidanceProbeAngle = 35f;
+        [SerializeField, Range(1, 3)] private int avoidanceProbeSteps = 2;
+        [SerializeField, Min(0.05f)] private float avoidanceCommitDuration = 0.4f;
+        [SerializeField, Min(0.05f)] private float stuckDetectionTime = 0.3f;
+        [SerializeField, Min(0f)] private float stuckSpeedThreshold = 0.15f;
+
+        [Header("Pathfinding")]
+        [SerializeField] private Grid pathGrid;
+        [SerializeField] private Vector2 pathGridOrigin = Vector2.zero;
+        [SerializeField] private Vector2 pathCellSize = Vector2.one;
+        [SerializeField, Min(0.05f)] private float waypointReachedDistance = 0.25f;
+        [SerializeField, Min(0.05f)] private float pathRepathInterval = 0.3f;
+        [SerializeField, Min(0.05f)] private float pathGoalChangeThreshold = 0.75f;
+        [SerializeField, Min(1)] private int pathSearchPaddingCells = 8;
+        [SerializeField, Min(32)] private int pathMaxIterations = 512;
+        [SerializeField, Min(1)] private int pathGoalSearchRadius = 3;
+
+        [Header("Defense")]
+        [SerializeField, Min(0.25f)] private float shieldRaiseDistance = 2.4f;
+        [SerializeField, Range(-1f, 1f)] private float shieldThreatFacingThreshold = 0.15f;
+        [SerializeField, Min(0.05f)] private float shieldHoldDuration = 0.45f;
+        [SerializeField, Min(0.05f)] private float shieldAttackMemoryWindow = 1.1f;
 
         [Header("Learning")]
         [SerializeField, Min(0.05f)] private float sampleInterval = 0.12f;
@@ -60,11 +93,20 @@ namespace _Game.Scripts
         private readonly Queue<PlayerSample> _samples = new();
         private readonly Dictionary<string, int> _attackPatternCounts = new();
         private readonly Dictionary<string, float> _attackPatternLastSeen = new();
+        private readonly List<Vector2> _pathWaypoints = new();
+        private readonly List<Vector2> _pathScratchWaypoints = new();
+        private readonly Collider2D[] _pathOverlapBuffer = new Collider2D[16];
+        private readonly RaycastHit2D[] _obstacleHits = new RaycastHit2D[12];
 
         private EnemyTactic _currentTactic = EnemyTactic.Hold;
+        private ContactFilter2D _obstacleContactFilter;
         private Vector2 _desiredVelocity;
         private Vector2 _desiredPosition;
         private Vector2 _lastKnownPlayerPosition;
+        private Vector2 _lastPosition;
+        private Vector2 _lastResolvedMoveDirection = Vector2.left;
+        private Vector2 _lastObstacleNormal;
+        private Vector2 _lastObstaclePoint;
         private PlayerAttackData _lastObservedAttack;
         private PlayerPlaystyleProfile _persistentProfile;
         private string _learnedAttackSignature = string.Empty;
@@ -72,9 +114,18 @@ namespace _Game.Scripts
         private float _counterUntilTime;
         private float _lastSteeringRefreshTime;
         private float _lastPersistentOrbitRecordTime;
+        private float _lastPathRequestTime = float.NegativeInfinity;
         private float _orbitBias;
         private float _combinedOrbitBias;
+        private float _shieldUntilTime;
+        private float _stuckTimer;
+        private float _avoidanceSideLockUntilTime;
         private bool _hasObservedAttack;
+        private bool _isAvoidingObstacle;
+        private bool _hasPath;
+        private int _preferredAvoidanceSide = 1;
+        private int _currentPathWaypointIndex;
+        private Vector2 _lastPathGoal;
 
         public string DebugTactic => _currentTactic.ToString();
         public float OrbitBias => _orbitBias;
@@ -82,6 +133,8 @@ namespace _Game.Scripts
         public string LearnedAttackSignature => _learnedAttackSignature;
         public PlayerMovementController TargetPlayer => targetPlayer;
         public bool IsCountering => Time.time < _counterUntilTime;
+        public bool CanAct => hitReaction == null || !hitReaction.IsActionLocked;
+        public bool IsShielding => shield != null && shield.IsShielding;
 
         private void Awake()
         {
@@ -90,18 +143,48 @@ namespace _Game.Scripts
                 rb = GetComponent<Rigidbody2D>();
             }
 
+            if (movementCollider == null)
+            {
+                movementCollider = GetComponent<Collider2D>();
+            }
+
+            if (hitReaction == null)
+            {
+                hitReaction = GetComponent<HitReaction2D>();
+            }
+
+            if (shield == null)
+            {
+                shield = GetComponent<Shield2D>();
+            }
+
+            if (GetComponent<EnemyRespawnController>() == null)
+            {
+                gameObject.AddComponent<EnemyRespawnController>();
+            }
+
             if (targetPlayer == null)
             {
                 targetPlayer = FindFirstObjectByType<PlayerMovementController>();
             }
 
+            ResolvePathGridReference();
+            ConfigureObstacleContactFilter();
             _persistentProfile = usePersistentPatternMemory ? PlayerPatternMemoryStore.LoadOrCreate() : new PlayerPlaystyleProfile();
             SeedLearnedPatternsFromMemory();
+            _lastPosition = transform.position;
+        }
+
+        private void OnValidate()
+        {
+            ResolvePathGridReference();
+            ConfigureObstacleContactFilter();
         }
 
         private void OnEnable()
         {
             BindPlayerEvents();
+            _lastPosition = transform.position;
         }
 
         private void OnDisable()
@@ -109,6 +192,10 @@ namespace _Game.Scripts
             UnbindPlayerEvents();
             _desiredVelocity = Vector2.zero;
             _desiredPosition = transform.position;
+            _isAvoidingObstacle = false;
+            _stuckTimer = 0f;
+            SetShielding(false);
+            ClearPath();
             SavePersistentMemory();
 
             if (rb != null)
@@ -124,21 +211,26 @@ namespace _Game.Scripts
 
         private void FixedUpdate()
         {
+            var enemyPosition = (Vector2)transform.position;
+            UpdateStuckState(enemyPosition);
+
             if (!EnsurePlayerReference())
             {
                 ApplyVelocity(Vector2.zero);
                 _currentTactic = EnemyTactic.Hold;
+                _lastPosition = enemyPosition;
                 return;
             }
 
-            var enemyPosition = (Vector2)transform.position;
             var playerPosition = (Vector2)targetPlayer.transform.position;
             _lastKnownPlayerPosition = playerPosition;
+            UpdateShieldState(enemyPosition, playerPosition);
 
             if (Vector2.Distance(enemyPosition, playerPosition) > reacquireDistance)
             {
                 ApplyVelocity(Vector2.zero);
                 _currentTactic = EnemyTactic.Hold;
+                _lastPosition = enemyPosition;
                 return;
             }
 
@@ -152,6 +244,7 @@ namespace _Game.Scripts
             }
 
             MoveTowardsDesiredPosition(enemyPosition);
+            _lastPosition = enemyPosition;
         }
 
         [ContextMenu("Clear Persistent Player Memory")]
@@ -302,7 +395,8 @@ namespace _Game.Scripts
 
         private void MoveTowardsDesiredPosition(Vector2 enemyPosition)
         {
-            var toTarget = _desiredPosition - enemyPosition;
+            var movementTarget = ResolveMovementTarget(enemyPosition);
+            var toTarget = movementTarget - enemyPosition;
             var speed = _currentTactic == EnemyTactic.CounterAttack ? counterMoveSpeed : moveSpeed;
 
             if (toTarget.magnitude <= 0.05f)
@@ -312,7 +406,13 @@ namespace _Game.Scripts
             }
 
             var desiredDirection = toTarget.normalized;
+            desiredDirection = ResolveMovementDirection(desiredDirection, speed);
             var desiredVelocity = desiredDirection * speed;
+
+            if (IsShielding && shield != null)
+            {
+                desiredVelocity *= shield.MovementMultiplier;
+            }
 
             if (_currentTactic == EnemyTactic.Hold && toTarget.magnitude <= stoppingDistance)
             {
@@ -322,8 +422,455 @@ namespace _Game.Scripts
             ApplyVelocity(desiredVelocity);
         }
 
+        private Vector2 ResolveMovementTarget(Vector2 enemyPosition)
+        {
+            AdvancePathWaypoint(enemyPosition);
+
+            if (HasDirectPath(enemyPosition, _desiredPosition))
+            {
+                ClearPath();
+                return _desiredPosition;
+            }
+
+            if (ShouldRepath())
+            {
+                RebuildPath(enemyPosition, _desiredPosition);
+                AdvancePathWaypoint(enemyPosition);
+            }
+
+            if (_hasPath && _currentPathWaypointIndex < _pathWaypoints.Count)
+            {
+                return _pathWaypoints[_currentPathWaypointIndex];
+            }
+
+            return _desiredPosition;
+        }
+
+        private void RebuildPath(Vector2 startPosition, Vector2 goalPosition)
+        {
+            ResolvePathGridReference();
+            _lastPathRequestTime = Time.time;
+            _lastPathGoal = goalPosition;
+
+            if (movementCollider == null || obstacleLayers.value == 0)
+            {
+                ClearPath();
+                return;
+            }
+
+            _pathScratchWaypoints.Clear();
+            var settings = new GridPathfinder2D.Settings
+            {
+                Grid = pathGrid,
+                FallbackOrigin = pathGridOrigin,
+                FallbackCellSize = pathCellSize,
+                ObstacleLayers = obstacleLayers,
+                AgentSize = movementCollider.bounds.size,
+                Clearance = obstacleClearance,
+                SearchPaddingCells = pathSearchPaddingCells,
+                MaxIterations = pathMaxIterations,
+                GoalSearchRadius = pathGoalSearchRadius,
+                IgnoredCollider = movementCollider,
+                IgnoredRigidbody = rb,
+                IgnoredRoot = transform,
+                IgnoredSecondaryRoot = targetPlayer != null ? targetPlayer.transform : null,
+                OverlapBuffer = _pathOverlapBuffer
+            };
+
+            if (!GridPathfinder2D.TryFindPath(startPosition, goalPosition, settings, _pathScratchWaypoints))
+            {
+                ClearPath();
+                return;
+            }
+
+            _pathWaypoints.Clear();
+            _pathWaypoints.AddRange(_pathScratchWaypoints);
+            _currentPathWaypointIndex = 0;
+            _hasPath = _pathWaypoints.Count > 0;
+        }
+
+        private bool ShouldRepath()
+        {
+            if (!_hasPath)
+            {
+                return Time.time >= _lastPathRequestTime + pathRepathInterval;
+            }
+
+            if (Vector2.SqrMagnitude(_desiredPosition - _lastPathGoal) >= pathGoalChangeThreshold * pathGoalChangeThreshold)
+            {
+                return Time.time >= _lastPathRequestTime + pathRepathInterval;
+            }
+
+            return _currentPathWaypointIndex >= _pathWaypoints.Count && Time.time >= _lastPathRequestTime + pathRepathInterval;
+        }
+
+        private void AdvancePathWaypoint(Vector2 enemyPosition)
+        {
+            if (!_hasPath || _pathWaypoints.Count == 0)
+            {
+                _currentPathWaypointIndex = 0;
+                return;
+            }
+
+            while (_currentPathWaypointIndex < _pathWaypoints.Count && Vector2.Distance(enemyPosition, _pathWaypoints[_currentPathWaypointIndex]) <= waypointReachedDistance)
+            {
+                _currentPathWaypointIndex++;
+            }
+
+            if (_currentPathWaypointIndex >= _pathWaypoints.Count)
+            {
+                ClearPath();
+                return;
+            }
+
+            for (var i = _pathWaypoints.Count - 1; i > _currentPathWaypointIndex; i--)
+            {
+                if (!HasDirectPath(enemyPosition, _pathWaypoints[i]))
+                {
+                    continue;
+                }
+
+                _currentPathWaypointIndex = i;
+                break;
+            }
+
+            while (_currentPathWaypointIndex < _pathWaypoints.Count && Vector2.Distance(enemyPosition, _pathWaypoints[_currentPathWaypointIndex]) <= waypointReachedDistance)
+            {
+                _currentPathWaypointIndex++;
+            }
+
+            if (_currentPathWaypointIndex >= _pathWaypoints.Count)
+            {
+                ClearPath();
+            }
+        }
+
+        private bool HasDirectPath(Vector2 fromPosition, Vector2 toPosition)
+        {
+            var direction = toPosition - fromPosition;
+            var distance = direction.magnitude;
+            if (distance <= waypointReachedDistance)
+            {
+                return true;
+            }
+
+            return !TryGetBlockingHit(direction / distance, distance + obstacleClearance, out _);
+        }
+
+        private void ClearPath()
+        {
+            _hasPath = false;
+            _currentPathWaypointIndex = 0;
+            _pathWaypoints.Clear();
+            _pathScratchWaypoints.Clear();
+        }
+
+        private void ResolvePathGridReference()
+        {
+            if (pathGrid == null)
+            {
+                pathGrid = FindFirstObjectByType<Grid>();
+            }
+
+            if (Mathf.Abs(pathCellSize.x) <= 0.001f)
+            {
+                pathCellSize.x = 1f;
+            }
+
+            if (Mathf.Abs(pathCellSize.y) <= 0.001f)
+            {
+                pathCellSize.y = 1f;
+            }
+        }
+
+        private void UpdateShieldState(Vector2 enemyPosition, Vector2 playerPosition)
+        {
+            if (shield == null)
+            {
+                return;
+            }
+
+            var toPlayer = playerPosition - enemyPosition;
+            var facingDirection = toPlayer.sqrMagnitude > 0.001f ? toPlayer.normalized : _lastResolvedMoveDirection;
+            shield.SetFacing(facingDirection);
+
+            if (!CanAct)
+            {
+                SetShielding(false);
+                return;
+            }
+
+            var distanceToPlayer = toPlayer.magnitude;
+            var playerForward = targetPlayer != null && targetPlayer.FacingDirection.sqrMagnitude > 0.001f
+                ? targetPlayer.FacingDirection.normalized
+                : Vector2.zero;
+            var playerToEnemy = distanceToPlayer > 0.001f ? (enemyPosition - playerPosition).normalized : Vector2.zero;
+            var playerIsThreatening = distanceToPlayer <= shieldRaiseDistance
+                && playerForward.sqrMagnitude > 0.001f
+                && Vector2.Dot(playerForward, playerToEnemy) >= shieldThreatFacingThreshold;
+            var recentlyObservedAttack = _hasObservedAttack && Time.time - _lastObservedAttack.Time <= shieldAttackMemoryWindow;
+            var learnedThreat = recentlyObservedAttack
+                && !string.IsNullOrEmpty(_learnedAttackSignature)
+                && _lastObservedAttack.Signature == _learnedAttackSignature;
+
+            if (playerIsThreatening || learnedThreat)
+            {
+                _shieldUntilTime = Mathf.Max(_shieldUntilTime, Time.time + shieldHoldDuration);
+            }
+
+            var shouldShield = Time.time < _shieldUntilTime && !IsCountering;
+            SetShielding(shouldShield);
+        }
+
+        private void SetShielding(bool isShielding)
+        {
+            if (shield == null)
+            {
+                return;
+            }
+
+            if (targetPlayer != null)
+            {
+                var facingDirection = (Vector2)targetPlayer.transform.position - (Vector2)transform.position;
+                if (facingDirection.sqrMagnitude > 0.001f)
+                {
+                    shield.SetFacing(facingDirection.normalized);
+                }
+            }
+
+            shield.SetShielding(isShielding);
+        }
+
+        private Vector2 ResolveMovementDirection(Vector2 desiredDirection, float speed)
+        {
+            _isAvoidingObstacle = false;
+            _lastObstacleNormal = Vector2.zero;
+            _lastObstaclePoint = Vector2.zero;
+
+            if (movementCollider == null || desiredDirection.sqrMagnitude <= 0.001f || obstacleLayers.value == 0)
+            {
+                _lastResolvedMoveDirection = desiredDirection;
+                return desiredDirection;
+            }
+
+            var castDistance = Mathf.Max(obstacleProbeDistance, speed * Time.fixedDeltaTime) + obstacleClearance;
+            if (!TryGetBlockingHit(desiredDirection, castDistance, out var blockingHit))
+            {
+                _lastResolvedMoveDirection = desiredDirection;
+                return desiredDirection;
+            }
+
+            _isAvoidingObstacle = true;
+            _lastObstacleNormal = blockingHit.normal;
+            _lastObstaclePoint = blockingHit.point;
+
+            if (Time.time >= _avoidanceSideLockUntilTime)
+            {
+                _preferredAvoidanceSide = DeterminePreferredAvoidanceSide(desiredDirection, blockingHit.normal);
+            }
+
+            var bestDirection = Vector2.zero;
+            var bestScore = float.NegativeInfinity;
+            var foundDirection = false;
+
+            EvaluateAvoidanceCandidate(GetSurfaceTangent(blockingHit.normal, _preferredAvoidanceSide), desiredDirection, castDistance, ref bestDirection, ref bestScore, ref foundDirection);
+            EvaluateAvoidanceCandidate(GetSurfaceTangent(blockingHit.normal, -_preferredAvoidanceSide), desiredDirection, castDistance, ref bestDirection, ref bestScore, ref foundDirection);
+
+            for (var step = 1; step <= avoidanceProbeSteps; step++)
+            {
+                var angle = avoidanceProbeAngle * step;
+                EvaluateAvoidanceCandidate(Rotate(desiredDirection, angle * _preferredAvoidanceSide), desiredDirection, castDistance, ref bestDirection, ref bestScore, ref foundDirection);
+                EvaluateAvoidanceCandidate(Rotate(desiredDirection, -angle * _preferredAvoidanceSide), desiredDirection, castDistance, ref bestDirection, ref bestScore, ref foundDirection);
+            }
+
+            if (foundDirection)
+            {
+                _lastResolvedMoveDirection = bestDirection;
+                _avoidanceSideLockUntilTime = Time.time + avoidanceCommitDuration;
+                return bestDirection;
+            }
+
+            var fallbackDirection = GetSurfaceTangent(blockingHit.normal, _preferredAvoidanceSide);
+            _lastResolvedMoveDirection = fallbackDirection;
+            _avoidanceSideLockUntilTime = Time.time + avoidanceCommitDuration;
+            return fallbackDirection;
+        }
+
+        private void EvaluateAvoidanceCandidate(
+            Vector2 candidateDirection,
+            Vector2 desiredDirection,
+            float castDistance,
+            ref Vector2 bestDirection,
+            ref float bestScore,
+            ref bool foundDirection)
+        {
+            if (candidateDirection.sqrMagnitude <= 0.001f)
+            {
+                return;
+            }
+
+            candidateDirection = candidateDirection.normalized;
+            if (TryGetBlockingHit(candidateDirection, castDistance, out _))
+            {
+                return;
+            }
+
+            var score = Vector2.Dot(candidateDirection, desiredDirection);
+            var side = GetSignedSide(desiredDirection, candidateDirection);
+            if (Time.time < _avoidanceSideLockUntilTime)
+            {
+                if (side == _preferredAvoidanceSide)
+                {
+                    score += 0.2f;
+                }
+                else if (side == -_preferredAvoidanceSide)
+                {
+                    score -= 0.05f;
+                }
+            }
+
+            if (score <= bestScore)
+            {
+                return;
+            }
+
+            bestScore = score;
+            bestDirection = candidateDirection;
+            foundDirection = true;
+        }
+
+        private bool TryGetBlockingHit(Vector2 direction, float distance, out RaycastHit2D blockingHit)
+        {
+            blockingHit = default;
+
+            if (movementCollider == null || direction.sqrMagnitude <= 0.001f || obstacleLayers.value == 0)
+            {
+                return false;
+            }
+
+            var hitCount = movementCollider.Cast(direction.normalized, _obstacleContactFilter, _obstacleHits, distance);
+            var closestDistance = float.PositiveInfinity;
+
+            for (var i = 0; i < hitCount; i++)
+            {
+                var hit = _obstacleHits[i];
+                if (hit.collider == null || IsIgnoredObstacle(hit.collider))
+                {
+                    continue;
+                }
+
+                if (hit.distance >= closestDistance)
+                {
+                    continue;
+                }
+
+                closestDistance = hit.distance;
+                blockingHit = hit;
+            }
+
+            return blockingHit.collider != null;
+        }
+
+        private bool IsIgnoredObstacle(Collider2D collider)
+        {
+            if (collider == null)
+            {
+                return true;
+            }
+
+            var colliderTransform = collider.transform;
+            if (colliderTransform == transform || colliderTransform.IsChildOf(transform))
+            {
+                return true;
+            }
+
+            if (rb != null && collider.attachedRigidbody == rb)
+            {
+                return true;
+            }
+
+            if (targetPlayer != null)
+            {
+                var playerTransform = targetPlayer.transform;
+                if (colliderTransform == playerTransform || colliderTransform.IsChildOf(playerTransform))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private void ConfigureObstacleContactFilter()
+        {
+            _obstacleContactFilter.useLayerMask = true;
+            _obstacleContactFilter.layerMask = obstacleLayers;
+            _obstacleContactFilter.useTriggers = false;
+        }
+
+        private void UpdateStuckState(Vector2 currentPosition)
+        {
+            var commandedSpeed = _desiredVelocity.magnitude;
+            if (commandedSpeed <= stuckSpeedThreshold)
+            {
+                _stuckTimer = 0f;
+                return;
+            }
+
+            var actualSpeed = Time.fixedDeltaTime > 0f
+                ? (currentPosition - _lastPosition).magnitude / Time.fixedDeltaTime
+                : 0f;
+
+            if (actualSpeed > stuckSpeedThreshold)
+            {
+                _stuckTimer = 0f;
+                return;
+            }
+
+            _stuckTimer += Time.fixedDeltaTime;
+            if (_stuckTimer < stuckDetectionTime)
+            {
+                return;
+            }
+
+            _preferredAvoidanceSide *= -1;
+            _avoidanceSideLockUntilTime = Time.time + avoidanceCommitDuration;
+            _stuckTimer = 0f;
+        }
+
+        private int DeterminePreferredAvoidanceSide(Vector2 desiredDirection, Vector2 obstacleNormal)
+        {
+            var positiveTangent = GetSurfaceTangent(obstacleNormal, 1);
+            var negativeTangent = GetSurfaceTangent(obstacleNormal, -1);
+            return Vector2.Dot(positiveTangent, desiredDirection) >= Vector2.Dot(negativeTangent, desiredDirection) ? 1 : -1;
+        }
+
+        private static Vector2 GetSurfaceTangent(Vector2 obstacleNormal, int side)
+        {
+            var tangent = new Vector2(-obstacleNormal.y, obstacleNormal.x).normalized;
+            return side >= 0 ? tangent : -tangent;
+        }
+
+        private static int GetSignedSide(Vector2 forward, Vector2 candidate)
+        {
+            return Vector3.Cross(forward, candidate).z >= 0f ? 1 : -1;
+        }
+
+        private static Vector2 Rotate(Vector2 vector, float degrees)
+        {
+            var radians = degrees * Mathf.Deg2Rad;
+            var sin = Mathf.Sin(radians);
+            var cos = Mathf.Cos(radians);
+            return new Vector2(vector.x * cos - vector.y * sin, vector.x * sin + vector.y * cos);
+        }
+
         private void ApplyVelocity(Vector2 velocity)
         {
+            if (hitReaction != null)
+            {
+                velocity = hitReaction.GetModifiedVelocity(velocity);
+            }
+
             _desiredVelocity = velocity;
 
             if (rb != null)
@@ -510,6 +1057,29 @@ namespace _Game.Scripts
 
             Gizmos.color = _currentTactic == EnemyTactic.CounterAttack ? Color.red : Color.yellow;
             Gizmos.DrawLine(transform.position, (Vector2)transform.position + _desiredVelocity.normalized * 1.2f);
+
+            Gizmos.color = _isAvoidingObstacle ? new Color(1f, 0.55f, 0f) : Color.white;
+            Gizmos.DrawLine(transform.position, (Vector2)transform.position + _lastResolvedMoveDirection.normalized * 1.2f);
+
+            if (_isAvoidingObstacle)
+            {
+                Gizmos.color = Color.blue;
+                Gizmos.DrawWireSphere(_lastObstaclePoint, 0.08f);
+                Gizmos.DrawLine(_lastObstaclePoint, _lastObstaclePoint + _lastObstacleNormal * 0.6f);
+            }
+
+            if (_hasPath && _currentPathWaypointIndex < _pathWaypoints.Count)
+            {
+                Gizmos.color = Color.Lerp(Color.cyan, Color.white, 0.35f);
+                var previousPoint = (Vector2)transform.position;
+                for (var i = _currentPathWaypointIndex; i < _pathWaypoints.Count; i++)
+                {
+                    var waypoint = _pathWaypoints[i];
+                    Gizmos.DrawWireSphere(waypoint, 0.12f);
+                    Gizmos.DrawLine(previousPoint, waypoint);
+                    previousPoint = waypoint;
+                }
+            }
 
             if (targetPlayer == null)
             {

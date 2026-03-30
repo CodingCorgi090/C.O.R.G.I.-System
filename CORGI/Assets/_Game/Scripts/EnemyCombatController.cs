@@ -16,6 +16,15 @@ namespace _Game.Scripts
         [SerializeField, Min(0f)] private float attackRadius = 0.4f;
         [SerializeField, Min(0f)] private float attackOriginOffset = 0.25f;
         [SerializeField, Min(0.05f)] private float attackCooldown = 0.8f;
+        [SerializeField, Min(0f)] private float attackKnockbackForce = 3.75f;
+        [SerializeField, Min(0f)] private float counterKnockbackMultiplier = 1.35f;
+        [SerializeField, Min(0f)] private float attackStunDuration = 0.1f;
+        [SerializeField, Min(0f)] private float counterStunMultiplier = 1.5f;
+        [Header("Projectile")]
+        [SerializeField] private bool useVisibleProjectiles = true;
+        [SerializeField, Min(0.1f)] private float projectileSpeed = 10f;
+        [SerializeField] private Color projectileColor = new(1f, 0.35f, 0.2f, 0.95f);
+        [SerializeField] private int projectileSortingOrder = 15;
         [SerializeField] private bool showAttackGizmos = true;
 
         private readonly HashSet<Health2D> _hitHealthTargets = new();
@@ -47,6 +56,11 @@ namespace _Game.Scripts
                 return;
             }
 
+            if (!enemyController.CanAct || enemyController.IsShielding)
+            {
+                return;
+            }
+
             if (Time.time < _lastAttackTime + attackCooldown)
             {
                 return;
@@ -73,6 +87,19 @@ namespace _Game.Scripts
             _hitHealthTargets.Clear();
 
             var damageAmount = attackDamage * (enemyController.IsCountering ? counterDamageMultiplier : 1f);
+            var knockbackForce = attackKnockbackForce * (enemyController.IsCountering ? counterKnockbackMultiplier : 1f);
+            var stunDuration = attackStunDuration * (enemyController.IsCountering ? counterStunMultiplier : 1f);
+            var attackSignature = enemyController.IsCountering
+                ? $"EnemyCounter:{enemyController.LearnedAttackSignature}"
+                : $"EnemyAttack:{enemyController.DebugTactic}";
+            var damageInfo = new DamageInfo(gameObject, -1, damageAmount, direction, origin, attackSignature, enemyController.IsCountering, knockbackForce, stunDuration);
+
+            if (useVisibleProjectiles)
+            {
+                SpawnProjectile(damageInfo, origin, direction, attackRange, attackRadius);
+                return;
+            }
+
             var hitCount = Physics2D.CircleCast(origin, attackRadius, direction, _contactFilter, _hitBuffer, attackRange);
             for (var i = 0; i < hitCount; i++)
             {
@@ -83,12 +110,28 @@ namespace _Game.Scripts
                     continue;
                 }
 
-                var attackSignature = enemyController.IsCountering
-                    ? $"EnemyCounter:{enemyController.LearnedAttackSignature}"
-                    : $"EnemyAttack:{enemyController.DebugTactic}";
-                var damageInfo = new DamageInfo(gameObject, -1, damageAmount, direction, hit.point, attackSignature, enemyController.IsCountering);
-                hurtbox.ApplyHit(damageInfo);
+                var hitDamageInfo = new DamageInfo(gameObject, -1, damageAmount, direction, hit.point, attackSignature, enemyController.IsCountering, knockbackForce, stunDuration);
+                hurtbox.ApplyHit(hitDamageInfo);
             }
+        }
+
+        private void SpawnProjectile(DamageInfo damageInfo, Vector2 origin, Vector2 direction, float range, float radius)
+        {
+            var projectileObject = new GameObject("EnemyProjectile");
+            projectileObject.transform.SetPositionAndRotation(origin, Quaternion.identity);
+            var projectile = projectileObject.AddComponent<CombatProjectile2D>();
+            projectile.Launch(
+                damageInfo,
+                origin,
+                direction,
+                projectileSpeed,
+                range,
+                radius,
+                hittableLayers,
+                transform,
+                GetComponent<Rigidbody2D>(),
+                projectileColor,
+                projectileSortingOrder);
         }
 
         private void ConfigureContactFilter()

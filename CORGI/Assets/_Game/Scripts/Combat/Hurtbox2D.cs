@@ -7,6 +7,7 @@ namespace _Game.Scripts.Combat
     {
         [SerializeField] private Health2D health;
         [SerializeField] private Collider2D hurtboxCollider;
+        [SerializeField] private Shield2D shield;
 
         public Health2D Health => health;
         public Collider2D HurtboxCollider => hurtboxCollider;
@@ -22,10 +23,25 @@ namespace _Game.Scripts.Combat
             {
                 hurtboxCollider = GetComponent<Collider2D>();
             }
+
+            if (shield == null)
+            {
+                shield = GetComponentInParent<Shield2D>();
+            }
         }
 
         public bool ApplyHit(DamageInfo damageInfo)
         {
+            if (shield != null && shield.TryHandleHit(damageInfo, out var resolvedDamageInfo, out var fullyBlocked))
+            {
+                if (fullyBlocked)
+                {
+                    return true;
+                }
+
+                damageInfo = resolvedDamageInfo;
+            }
+
             return health != null && health.TryApplyDamage(damageInfo);
         }
     }

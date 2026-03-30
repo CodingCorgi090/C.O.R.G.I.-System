@@ -7,13 +7,20 @@ namespace _Game.Scripts.Persistence
     [Serializable]
     public class PlayerPlaystyleProfile
     {
-        public const int CurrentVersion = 1;
+        public const int CurrentVersion = 2;
         private const int MaxTrackedPatterns = 32;
 
         [SerializeField] private int version = CurrentVersion;
         [SerializeField] private float clockwiseOrbitWeight;
         [SerializeField] private float counterClockwiseOrbitWeight;
         [SerializeField] private List<AttackPatternEntry> attackPatterns = new();
+        [SerializeField] private int totalGeneratedLevels;
+        [SerializeField] private int totalCompletedLevels;
+        [SerializeField] private float totalCompletionTime;
+        [SerializeField] private float lastCompletionTime;
+        [SerializeField] private float bestCompletionTime = -1f;
+        [SerializeField] private int lastGeneratedDifficulty = 1;
+        [SerializeField] private int highestGeneratedDifficulty = 1;
 
         public int Version => version;
         public float PersistentOrbitBias
@@ -26,6 +33,14 @@ namespace _Game.Scripts.Persistence
         }
 
         public IReadOnlyList<AttackPatternEntry> AttackPatterns => attackPatterns;
+        public int TotalGeneratedLevels => totalGeneratedLevels;
+        public int TotalCompletedLevels => totalCompletedLevels;
+        public float TotalCompletionTime => totalCompletionTime;
+        public float LastCompletionTime => lastCompletionTime;
+        public float BestCompletionTime => bestCompletionTime > 0f ? bestCompletionTime : 0f;
+        public float AverageCompletionTime => totalCompletedLevels > 0 ? totalCompletionTime / totalCompletedLevels : 0f;
+        public int LastGeneratedDifficulty => Mathf.Max(1, lastGeneratedDifficulty);
+        public int HighestGeneratedDifficulty => Mathf.Max(1, highestGeneratedDifficulty);
 
         public void EnsureVersion()
         {
@@ -126,6 +141,43 @@ namespace _Game.Scripts.Persistence
             }
 
             return bestMatch?.Signature ?? string.Empty;
+        }
+
+        public float GetDominantAttackPatternRatio()
+        {
+            if (attackPatterns == null || attackPatterns.Count == 0)
+            {
+                return 0f;
+            }
+
+            var totalCount = 0;
+            var highestCount = 0;
+            for (var i = 0; i < attackPatterns.Count; i++)
+            {
+                totalCount += Mathf.Max(0, attackPatterns[i].Count);
+                highestCount = Mathf.Max(highestCount, attackPatterns[i].Count);
+            }
+
+            return totalCount > 0 ? highestCount / (float)totalCount : 0f;
+        }
+
+        public void RecordGeneratedLevel(int difficulty)
+        {
+            EnsureVersion();
+            totalGeneratedLevels++;
+            lastGeneratedDifficulty = Mathf.Max(1, difficulty);
+            highestGeneratedDifficulty = Mathf.Max(highestGeneratedDifficulty, lastGeneratedDifficulty);
+        }
+
+        public void RecordLevelCompletion(float completionTime, int difficulty)
+        {
+            EnsureVersion();
+            var sanitizedTime = Mathf.Max(0f, completionTime);
+            totalCompletedLevels++;
+            totalCompletionTime += sanitizedTime;
+            lastCompletionTime = sanitizedTime;
+            bestCompletionTime = bestCompletionTime <= 0f ? sanitizedTime : Mathf.Min(bestCompletionTime, sanitizedTime);
+            highestGeneratedDifficulty = Mathf.Max(highestGeneratedDifficulty, Mathf.Max(1, difficulty));
         }
 
         [Serializable]

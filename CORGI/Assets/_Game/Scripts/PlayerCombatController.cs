@@ -13,6 +13,15 @@ namespace _Game.Scripts
         [SerializeField] private Transform attackOrigin;
         [SerializeField] private LayerMask hittableLayers = ~0;
         [SerializeField, Min(0f)] private float attackOriginOffset = 0.25f;
+        [SerializeField, Min(0f)] private float baseKnockbackForce = 4.5f;
+        [SerializeField, Min(0f)] private float rushKnockbackForce = 7.25f;
+        [SerializeField, Min(0f)] private float baseStunDuration = 0.1f;
+        [SerializeField, Min(0f)] private float rushStunDuration = 0.2f;
+        [Header("Projectile")]
+        [SerializeField] private bool useVisibleProjectiles = true;
+        [SerializeField, Min(0.1f)] private float projectileSpeed = 12f;
+        [SerializeField] private Color projectileColor = new(0.15f, 1f, 1f, 0.95f);
+        [SerializeField] private int projectileSortingOrder = 15;
         [SerializeField] private bool showAttackGizmos = true;
 
         private readonly HashSet<Health2D> _hitHealthTargets = new();
@@ -66,6 +75,11 @@ namespace _Game.Scripts
 
         private void HandleAttackPerformed(PlayerAttackData attackData)
         {
+            if (playerMovement == null || playerMovement.IsShielding)
+            {
+                return;
+            }
+
             var attackDirection = attackData.Direction.sqrMagnitude > 0.001f
                 ? attackData.Direction.normalized
                 : playerMovement != null && playerMovement.FacingDirection.sqrMagnitude > 0.001f
@@ -81,6 +95,16 @@ namespace _Game.Scripts
             _lastAttackRadius = attackData.Radius;
             _hitHealthTargets.Clear();
 
+            var knockbackForce = attackData.Style == PlayerAttackStyle.Rush ? rushKnockbackForce : baseKnockbackForce;
+            var stunDuration = attackData.Style == PlayerAttackStyle.Rush ? rushStunDuration : baseStunDuration;
+            var damageInfo = new DamageInfo(gameObject, attackData.AttackId, attackData.Damage, attackDirection, origin, attackData.Signature, false, knockbackForce, stunDuration);
+
+            if (useVisibleProjectiles)
+            {
+                SpawnProjectile(damageInfo, origin, attackDirection, attackData.Range, attackData.Radius);
+                return;
+            }
+
             var hitCount = Physics2D.CircleCast(origin, attackData.Radius, attackDirection, _contactFilter, _hitBuffer, attackData.Range);
             for (var i = 0; i < hitCount; i++)
             {
@@ -91,9 +115,28 @@ namespace _Game.Scripts
                     continue;
                 }
 
-                var damageInfo = new DamageInfo(gameObject, attackData.AttackId, attackData.Damage, attackDirection, hit.point, attackData.Signature, false);
-                hurtbox.ApplyHit(damageInfo);
+                var hitDamageInfo = new DamageInfo(gameObject, attackData.AttackId, attackData.Damage, attackDirection, hit.point, attackData.Signature, false, knockbackForce, stunDuration);
+                hurtbox.ApplyHit(hitDamageInfo);
             }
+        }
+
+        private void SpawnProjectile(DamageInfo damageInfo, Vector2 origin, Vector2 direction, float range, float radius)
+        {
+            var projectileObject = new GameObject($"PlayerProjectile_{damageInfo.AttackId}");
+            projectileObject.transform.SetPositionAndRotation(origin, Quaternion.identity);
+            var projectile = projectileObject.AddComponent<CombatProjectile2D>();
+            projectile.Launch(
+                damageInfo,
+                origin,
+                direction,
+                projectileSpeed,
+                range,
+                radius,
+                hittableLayers,
+                transform,
+                playerMovement != null ? playerMovement.GetComponent<Rigidbody2D>() : null,
+                projectileColor,
+                projectileSortingOrder);
         }
 
         private void ConfigureContactFilter()

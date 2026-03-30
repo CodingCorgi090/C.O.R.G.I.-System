@@ -29,17 +29,28 @@ namespace _Game.Scripts.Combat
 
         public bool TryApplyDamage(DamageInfo damageInfo)
         {
-            if (IsDead || damageInfo.Amount <= 0f || Time.time < _invulnerableUntil)
+            var hasHealthDamage = damageInfo.Amount > 0f;
+            var hasImpact = hasHealthDamage || damageInfo.KnockbackForce > 0f || damageInfo.StunDuration > 0f;
+            if (IsDead || !hasImpact)
+            {
+                return false;
+            }
+
+            if (hasHealthDamage && Time.time < _invulnerableUntil)
             {
                 return false;
             }
 
             var previousHealth = _currentHealth;
-            _currentHealth = Mathf.Max(0f, _currentHealth - damageInfo.Amount);
-            _invulnerableUntil = Time.time + invulnerabilityDuration;
+            if (hasHealthDamage)
+            {
+                _currentHealth = Mathf.Max(0f, _currentHealth - damageInfo.Amount);
+                _invulnerableUntil = Time.time + invulnerabilityDuration;
+            }
+
             Damaged?.Invoke(damageInfo, previousHealth, _currentHealth);
 
-            if (_currentHealth > 0f)
+            if (!hasHealthDamage || _currentHealth > 0f)
             {
                 return true;
             }
